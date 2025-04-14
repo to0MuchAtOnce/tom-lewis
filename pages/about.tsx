@@ -27,17 +27,6 @@ const About: NextPage = () => {
           section, where I like to cover topics that I find interesting, or
           problems i’ve had a hard time solving.
         </p>
-        <p className='para'>
-          The{' '}
-          <Link className='textLink' href='./photo'>
-            photo
-          </Link>{' '}
-          page displays my photography work in a collection of albums and
-          personal projects that i’ve worked on over the years. Parts of this
-          site are still very much a work in progress, and I’m always thinking
-          of ways to make it better. If you have any suggestions you can find my
-          contact details below.
-        </p>
 
         <div className='headingMd'>What am I working on?</div>
 

@@ -1,5 +1,4 @@
 import React from 'react';
-import Image from 'next/image';
 import Link from 'next/link';
 import { GoLinkExternal } from 'react-icons/go';
 
@@ -7,45 +6,16 @@ interface CardProps {
   title: string;
   content?: string;
   link?: string;
-  image?: string;
   path?: string;
   showView?: boolean;
-  showPhotoTitle?: boolean;
-  showCategory?: boolean;
-  categoryType?: string;
   children?: React.ReactNode;
   color?: string;
 }
 
-export const Card = ({
-  title,
-  content,
-  link,
-  image,
-  showView,
-  showPhotoTitle,
-  showCategory,
-  categoryType,
-}: CardProps) => {
+export const Card = ({ title, content, link, showView }: CardProps) => {
   return (
-    // ProjectCard & photoCard use this component
+    // ProjectCard
     <div className='card'>
-      <div className='photoCardImage'>
-        {image && (
-          <Image
-            className='photoCardImage'
-            width={0}
-            height={0}
-            sizes='100vw'
-            src={image}
-            alt={title}
-          />
-        )}
-      </div>
-      <div className='photoCardInfo'>
-        {showPhotoTitle && <h2 className='photoCardTitle'>{title}</h2>}
-        {showCategory && <div className='photoCategory'>{categoryType}</div>}
-      </div>
       {link && (
         <div className='projectCardTitle'>
           <Link href={link} target='_blank' rel='noopener noreferrer'>

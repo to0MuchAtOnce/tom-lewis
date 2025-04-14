@@ -14,11 +14,6 @@ function generateSiteMap(posts: SitemapPostData[]): string {
        <lastmod>${currentDate}</lastmod>
        <priority>1</priority>
      </url>
-     <url>
-       <loc>${URL}/photo</loc>
-       <lastmod>${currentDate}</lastmod>
-       <priority>0.8</priority>
-     </url>
       <url>
        <loc>${URL}/projects</loc>
        <lastmod>${currentDate}</lastmod>

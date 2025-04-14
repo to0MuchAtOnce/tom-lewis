@@ -31,14 +31,6 @@ export default function Header({ toggleTheme }: HeaderProps) {
           Blog
         </Link>
         <Link
-          href='/photo'
-          className={`MobileMenuItem ${
-            router.pathname === '/photo' ? 'selected' : ''
-          }`}
-        >
-          Photo
-        </Link>
-        <Link
           href='/projects'
           className={`MobileMenuItem ${
             router.pathname === '/projects' ? 'selected' : ''
